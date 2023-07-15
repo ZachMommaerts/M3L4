@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var wordList = ["Cactus", "Camera", "Cat"]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        VStack{
+            ForEach(0..<10) {_ in
+                Text("Hello")
+            }
         }
-        .padding()
     }
 }
 
